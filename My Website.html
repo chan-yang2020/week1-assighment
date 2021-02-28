@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"></meta>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <title>Luxury Cars</title>
+    <style type="text/css">
+
+        body{margin:0px;background-color:#cccccc ;}
+        
+        nav{
+        display:flex;
+        }
+
+        nav>.logo{
+        flex:auto;
+        background-color:#cccccc;
+        font-weight: bold;
+        }
+
+        nav>.item{
+        flex:none; width: 100px;
+        background-color: #cccccc;
+        font-weight: bold;
+        }
+
+        .head{
+            text-align: center;background-color:darkslategray;
+            height: 300px;line-height: 300px; 
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        main{
+        display: flex;flex-wrap:wrap;
+        justify-content:center;
+        align-items: stretch;
+        background-color: #cccccc;
+        }
+
+        main>.item{
+        flex:none;
+        width:300px; margin:10px;
+        background-color: darkslategray;
+        text-align: center;
+        font-weight: bold;
+        }
+
+        @media (max-width:500px){
+            main > .item{
+            width:45%;
+            }
+        }
+        @media (max-width:500px){
+            main > .item{
+            width:90%;
+            }
+        }       
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">My Website</div>
+        <div class="item">item1</div>
+        <div class="item">item2</div>
+        <div class="item">item3</div>
+        <div class="item">item4</div>
+    </nav>
+    
+    <div class="head">Welcome to My Website</div>
+    
+
+    <main>
+        <div class="item">Audi R8
+            <img width="300"
+                 height="200"
+                 src="R8.jpg">
+        </div>
+        <div class="item">BMW 5 series
+            <img width="300"
+                 height="200"
+                 src="BMW.jpg">
+        </div>
+        <div class="item">Mercedes E class
+            <img width="300"
+                 height="200"
+                 src="mercedes.jpg">
+        </div>
+        <div class="item">Lexus ES
+            <img width="300"
+                 height="200"
+                 src="Lexus.jpg">
+        </div>
+    </main>
+    <main>
+        <div class="item">Audi A6
+            <img width="300"
+                 height="200"
+                 src="Audi.jpeg">
+        </div>
+        <div class="item">Lamborghini Huracan
+            <img width="300"
+                 height="200"
+                 src="Huracan.jpg">
+        </div>
+        <div class="item">Volvo V60
+            <img width="300"
+                 height="200"
+                 src="Volvo.jpeg">
+        </div>
+        <div class="item">Porsche 911
+            <img width="300"
+                 height="200"
+                 src="porsche.jpg">
+        </div>
+    </main>
+</body>
+</html>
